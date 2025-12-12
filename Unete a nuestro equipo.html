@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Cafeteria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="Style-cafeteria.css">
+</head>
+<body>
+        <div class="Barra-tareas">
+        <h1> <i class="fa-solid fa-mug-hot"></i>La casa del cafe</h1>
+
+        <nav>
+            <ul class="barra-opciones">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Perfil.html">Perfil</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Tienda.html">Tienda</a></li>
+                <li><a href="Unete a nuestro equipo.html">¡Unete a nuestro equipo!</a></li>
+            </ul>
+        </nav>
+
+        <div class="Buscar-producto">
+            <input type="text" placeholder="Buscar producto...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="contenedor-principal">
+        <div class="seccion-texto">
+        <h3 class="titulo">¡Quieres estar en un lugar que puede ser tu segunda casa!</h3>
+        <h4 class="subtitulo">ENTONCES UNETE A NOSOTROS</h4>
+        <P>Si te interesa alguna de nuestras vacantes y quieres trabajar con nosotros empiesa por llenar los datos que se te piden y tambien adjunta tu curriculum o slicitud, una vez recibida la informacion de sus datos nos contactaremos con usted por mensaje donde se le informara el dia exacto y la hora exacta para la entrevista</P>
+        </div>
+        
+        <main class="seccion-formulario">
+            <div class="form-grid">
+                <div class="Form-grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="Form-grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo"> 
+                </div>
+                <div class="Form-grupo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="Form-grupo full-width">
+                    <label for="mensaje">Porque le interesa trabajar con nosotros</label>
+                    <textarea  id="mensaje" name="mensaje" rows="5"></textarea>
+                </div>
+                
+                <div class="Form-grupo">
+                    <label for="file">Adjunte su curriculum o solicitud</label>
+                   <input type="file">
+                </div>
+            </div>
+        
+            <div id="mensaje-error" class="mensaje-oculto error"></div>
+            <div id="mensaje-exito" class="mensaje-oculto exito"></div>
+                
+            <button class="Enviar-solicitud" type="button" onclick="validarYEnviar()">
+                <i class="fa-solid fa-paper-plane"></i>Enviar solicitud
+            </button>
+        
+        </main>
+</div>
+
+        <div class="copyright">
+            <p>COPYRIGHT© 2025 La casa del cafe todos los derechos reservados</p>
+        </div>
+        <script src="Script-cafeteria.js"></script>
+</body>
+</html>
